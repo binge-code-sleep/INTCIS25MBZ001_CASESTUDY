@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background: rgb(15, 15, 83);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 80px;
+    padding: 0 20px;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#logo-title {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#logo {
+    height: 60px;
+    margin-left: 40px;
+
+}
+
+#title {
+    margin-left: 20px;
+    font-size: 2em;
+}
+
+#navbar ul {
+    font-size: large;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 150px;
+}
+
+#navbar ul a {
+    text-decoration: underline;
+    color: white;
+    font-size: 1.2em;
+}
+
+#d1 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 60px;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: device-width;
+    height: 100%;
+}
+
+#d2 {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: device-width;
+    height: 100%;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-self: space-between;
+    margin-left: 60px;
+}
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px 15px;
+}
+
+th:nth-child(1),
+td:nth-child(1) {
+    padding-right: 250px;
+    text-align: left;
+    /* Adjust the gap between "Name" and "Price" */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    text-align: right;
+    /* Adjust the gap between "Name" and "Price" */
+}
+
+td {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+th {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+
+footer {
+    background: gray;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: fixed;
+    bottom: 0;
+}
