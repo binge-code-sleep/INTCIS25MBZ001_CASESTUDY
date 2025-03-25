@@ -1,0 +1,132 @@
+#edit-menu-item-box {
+    text-align: center;
+    margin-top: 40px;
+    /* Reduced margin */
+    margin-bottom: 10px;
+    /* Reduced margin */
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+#menu {
+    font-size: 2.5em;
+    /* Slightly smaller font size */
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    /* Reduced margin */
+    letter-spacing: 0.5px;
+    /* Reduced spacing */
+    text-transform: uppercase;
+}
+
+#edit-menu-form {
+    margin: 0 auto;
+    margin-top: 30px;
+    /* Reduced margin */
+    padding: 20px;
+    /* Reduced padding */
+    width: 70%;
+    /* Slightly narrower width */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    /* Reduced border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Reduced shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 15px;
+    /* Reduced gap */
+    position: relative;
+}
+
+label {
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 5px;
+    /* Reduced margin */
+    font-size: 1em;
+    /* Slightly smaller font size */
+}
+
+input[type="text"],
+select {
+    margin-bottom: 15px;
+    /* Reduced margin */
+    padding: 10px;
+    /* Reduced padding */
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* Reduced border radius */
+    font-size: 14px;
+    /* Slightly smaller font size */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    /* Reduced margin */
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    /* Reduced padding */
+    text-align: center;
+    font-size: 16px;
+    /* Slightly smaller font size */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    /* Reduced border radius */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 15px;
+    /* Reduced margin */
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+    transform: scale(1.03);
+    /* Slightly reduced scale */
+}
+
+#edit-menu-form input:focus,
+#edit-menu-form select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+    /* Reduced shadow */
+}
+
+#edit-menu-form {
+    background: linear-gradient(135deg, #f9f9f9, #e8e8e8);
+}
+
+input[type="submit"]:active {
+    transform: scale(0.97);
+    /* Slightly reduced scale */
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+#edit-menu-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    /* Reduced gap */
+}
+
+#menu {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    /* Reduced shadow */
+}

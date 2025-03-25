@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="js/cart.js"></script>
+    <link rel="stylesheet" href="style/table.css">
+    <script src="js/cartFlow.js"></script>
 </head>
 
 <body>
@@ -17,51 +20,27 @@
                 <a href="menu-item-list-customer.html">Menu</a>
             </ul>
             <ul>
-                <a href="cart.html">Cart</a>
+                <a href="#" onclick="cartFlow()">Cart</a>
             </ul>
         </nav>
     </header>
-    <div id="d1">
-        <h1 id="menu">Menu Items</h1>
+    <div id="table-body">
+        <table>
+            <caption>
+                <h3 id="table-heading">Cart</h3>
+                <p id="added-message">Item added to Cart successfully</p>
+            </caption>
+            <thead>
+                <td>Name</td>
+                <td>Free Delivery</td>
+                <td>Price</td>
+                <td>Delete</td>
+            </thead>
+            <tbody id="table-items-body"></tbody>
+        </table>
     </div>
-    <div id="d2">
-        <table id="t1">
-            <tr>
-                <th id="th1">Name</th>
-                <th>Price</th>
-                <th>Active</th>
-                <th>Date of Launch</th>
-                <th>Category</th>
-                <th>Free Delivery</th>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td>Sandwich</td>
-                <td>Rs. 99.00</td>
-                <td>Yes</td>
-                <td>15/03/2017</td>
-                <td>Main Course</td>
-                <td>Yes</td>
-                <td><a href="cart.html">Add to Cart</a></td>
-            </tr>
-            <tr>
-                <td>Burger</td>
-                <td>Rs. 129.00</td>
-                <td>Yes</td>
-                <td>23/12/2017</td>
-                <td>Main Course</td>
-                <td>Yes</td>
-                <td><a href="cart.html">Add to Cart</a></td>
-            </tr>
-            <tr>
-                <td>Pizza</td>
-                <td>Rs. 149.00</td>
-                <td>Yes</td>
-                <td>21/08/2018</td>
-                <td>Main Course</td>
-                <td>Yes</td>
-                <td><a href="cart.html">Add to Cart</a></td>
-            </tr>
+    <script src="js/menuItems.js"></script>
+    <script src="js/menuItemListCustomer.js"></script>
             <footer>
                 <p>&copy; 2025 Cognizant</p>
             </footer>

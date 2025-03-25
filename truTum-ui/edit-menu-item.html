@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit Menu Items</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/nav-bar.css">
     <link rel="stylesheet" href="style/edit-menu-item.css">
+    <link rel="stylesheet" href="style/footer.css">
 </head>
 <body>
-    <header id="head">
-        <nav id="navbar">
-            <p id="title">truYum</p>
-            <img id="logo" src="images/logo.png" alt="logo">
-            <ul>
-                <a href="menu-item-list-customer.html">Menu</a>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <div id="heading-logo">
+            <a id="heading" href="index.html">truYum</a>
+            <img src="images/truyum-logo.png" alt="logo" id="logo" hieght="25" width="55">
+        </div>
+        <a href="menu-item-list-admin.html"><p class="menu-heading">Menu</p></a>
+    </nav>
     <div id="edit-menu-item-box">
         <h3>Edit Menu Item</h3>
         <form onsubmit="editMenuItem()" id="edit-menu-form" action="edit-menu-item-status.html">
             <div class="edit-menu-item">
-                <label for="title-1">Name</label>
-                <input type="text" id="title-1" name="title" required>
+                <label for="title">Name</label>
+                <input type="text" id="title" name="title" required>
             </div>   
             <div id="edit-menu-second-row">
                 <div class="edit-menu-item">
@@ -61,7 +60,7 @@
         </form>
     </div>
     <footer>
-        <p>&copy; 2025 Cognizant</p>
+        <p>Copyright © 2019</p>
     </footer>
     <script src="js/editMenuItem.js"></script>
 </body>

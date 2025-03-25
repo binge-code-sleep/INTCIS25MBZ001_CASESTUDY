@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Admin Menu</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style/table.css">
+    <script src="js/cartFlow.js"></script>
 </head>
 <body>
     <header id="head">
@@ -12,21 +13,24 @@
             <p id="title">truYum</p>
             <img id="logo" src="images/logo.png" alt="logo">
             <ul>
-                <a href="menu-item-list-customer.html">Menu</a>
+                <a href="menu-item-list-.html">Menu</a>
+            </ul>
+            <ul>
+                <a href="#" onclick="cartFlow()">Cart</a>
             </ul>
         </nav>
     </header>
-    <div id="table-body-1">
-        <table class="table">
-            <caption><h3 id="table-heading">Menu Items</h3></caption>
+    <div id="table-body">
+        <table>
+            <caption>
+                <h3 id="table-heading">Cart</h3>
+                <p id="added-message">Item removed from Cart successfully</p>
+            </caption>
             <thead>
                 <td>Name</td>
-                <td>Price</td>
-                <td>Active</td>
-                <td>Date of Launch</td>
-                <td>Category</td>
                 <td>Free Delivery</td>
-                <td>Action</td>
+                <td>Price</td>
+                <td>Delete</td>
             </thead>
             <tbody id="table-items-body"></tbody>
         </table>
@@ -34,7 +38,6 @@
     <footer>
         <p>&copy; 2025 Cognizant</p>
     </footer>
-    <script src="js/menuItems.js"></script>
-    <script src="js/menuItemListAdmin.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>
