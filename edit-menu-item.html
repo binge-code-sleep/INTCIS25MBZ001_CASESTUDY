@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/edit-menu-item.css">
+    <script src="js/editMenuItem.js"></script>
+</head>
+
+<body>
+
+    <header id="head">
+        <nav id="navbar">
+            <p id="title">truYum</p>
+            <img id="logo" src="images/logo.png" alt="logo">
+            <ul>
+                <a href="menu-item-list-admin.html">Menu</a>
+            </ul>
+        </nav>
+    </header>
+    <div id="edit-menu-item-box">
+        <h1 id="menu">Edit Menu Item</h1>
+
+        <div id="edit-menu-form">
+            <form action="edit-menu-item-status.html">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" value="Sandwich"><br>
+                <label for="price">Price:</label><br>
+                <input type="text" id="price" name="price" value="99.00"><br>
+                <label for="active">Active:</label><br>
+                <input type="radio" id="active" name="active" value="Yes" checked>Yes
+                <input type="radio" id="active" name="active" value="No">No<br>
+                <label for="date">Date of Launch:</label><br>
+                <input type="text" id="date" name="date" value="15/03/2017"><br>
+                <label for="category">Category:</label><br>
+                <select id="category" name="category">
+                    <option value="Main Course">Main Course</option>
+                    <option value="Starters">Starters</option>
+                    <option value="Dessert">Dessert</option>
+                </select><br>
+                <input type="checkbox" id="delivery" name="delivery" value="Yes" checked>Free Delivery<br>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Cognizant</p>
+    </footer>
+</body>
+
+</html>
